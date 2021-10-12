@@ -1,0 +1,33 @@
+.sideBar{
+    width: 18rem;
+    height: 100vh;
+    border-right: 1px solid gray;
+    background-color: #212121;
+}
+
+ul{
+    list-style: none;
+    padding: 1rem 2rem;
+    list-style: none;
+}
+
+li{
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+li:hover{
+    border-bottom: solid 1px rgba(255, 255, 255, 0.384);
+
+}
+
+.imgMovile{
+    height: 110px;
+    width: 250px;
+    margin-top: 30px;
+}
+
+
+
+
+

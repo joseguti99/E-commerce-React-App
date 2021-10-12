@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+//Rutas Link
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import movile from './components/SideBar/movile.png'
+import NavBarNav from './components/NavBarNav';
+import SideBar from './components/SideBar'
+import Inicio from './components/pages/Inicio'
+import Ofertas from './components/pages/Ofertas'
+import Productos from './components/pages/Productos'
+import Contact from './components/pages/Contact'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+    <Router> 
+      <div className="d-flex">
+      <SideBar/>
+      <div className="content w-100">
+        <Route path ="/Inicio" exact= {true} component = {Inicio} />
+        <Route path ="/Ofertas" exact= {true} component = {Ofertas} />
+        <Route path ="/Productos" exact= {true} component = {Productos} />
+        <Route path ="/Contact" exact= {true} component = {Contact} />
+        </div>
+      </div>
+    </Router>
+    </>
   );
 }
 
