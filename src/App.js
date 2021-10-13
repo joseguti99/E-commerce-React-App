@@ -8,11 +8,11 @@ import Inicio from './components/pages/Inicio'
 import Ofertas from './components/pages/Ofertas'
 import Productos from './components/pages/Productos'
 import Contact from './components/pages/Contact'
+import CartProducts from './components/CartProducts'
 
 function App() {
   return (
     <>
-    
     <Router> 
       <div className="d-flex">
       <SideBar/>
@@ -21,6 +21,7 @@ function App() {
         <Route path ="/Ofertas" exact= {true} component = {Ofertas} />
         <Route path ="/Productos" exact= {true} component = {Productos} />
         <Route path ="/Contact" exact= {true} component = {Contact} />
+        <Route path ="/CartProducts" exact= {true} component = {CartProducts} />
         </div>
       </div>
     </Router>

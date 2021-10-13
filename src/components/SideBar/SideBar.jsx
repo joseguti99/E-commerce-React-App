@@ -6,7 +6,6 @@ import Ofertas from "../pages/Ofertas";
 import * as FaIcons from 'react-icons/fa';
 import * as MdIcons from "react-icons/md";
 import movile from '../SideBar/movile.png'
-
 const SideBar = () => {
     return ( 
         <>
