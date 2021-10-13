@@ -5,6 +5,7 @@ import * as GrIcons from "react-icons/gr";
 import CartProducts from '../CartProducts';
 import CartWidget from '../CartWidget/index'
 
+
 import {
 Collapse,
 Navbar,
@@ -31,16 +32,16 @@ return (
         <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto" navbar>
                 <NavItem className="mx-4">
-                    <NavLink href="/Productos">Smart Phones</NavLink>
+                    <NavLink href="./Productos">Smart Phones</NavLink>
                 </NavItem>
                 <NavItem className="mx-4">
-                    <NavLink href="/Productos">Smart Watches</NavLink>
+                    <NavLink href="./Productos">Smart Watches</NavLink>
                 </NavItem>
                 <NavItem className="mx-4">
-                    <NavLink href="/Productos">Accesories</NavLink>
+                    <NavLink href="./Productos">Accesories</NavLink>
                 </NavItem>
                 <NavItem className="mx-4">
-                <NavLink href="/CartProducts"><CartWidget/></NavLink>
+                <NavLink href="./CartProducts"><CartWidget/></NavLink>
                 </NavItem>
             <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>Brands</DropdownToggle>
