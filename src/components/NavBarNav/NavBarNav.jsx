@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from "react-router-dom";
 import react,{Component} from "react";
 import styles from './NavBarNav.module.css'
 import * as GrIcons from "react-icons/gr";
@@ -13,7 +14,6 @@ NavbarToggler,
 NavbarBrand,
 Nav,
 NavItem,
-NavLink,
 UncontrolledDropdown,
 DropdownToggle,
 DropdownMenu,
@@ -32,16 +32,16 @@ return (
         <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto" navbar>
                 <NavItem className="mx-4">
-                    <NavLink href="./Productos">Smart Phones</NavLink>
+                    <NavLink exact to="./Productos" className="text-dark text-decoration-none">Smart Phones</NavLink>
                 </NavItem>
                 <NavItem className="mx-4">
-                    <NavLink href="./Productos">Smart Watches</NavLink>
+                    <NavLink exact to="/Productos" className="text-dark text-decoration-none">Smart Watches</NavLink>
                 </NavItem>
                 <NavItem className="mx-4">
-                    <NavLink href="./Productos">Accesories</NavLink>
+                    <NavLink exact to="/Productos" className="text-dark text-decoration-none" navbar>Accesories</NavLink>
                 </NavItem>
                 <NavItem className="mx-4">
-                <NavLink href="./CartProducts"><CartWidget/></NavLink>
+                <NavLink exact to="/CartProducts" className="text-decoration-none"><CartWidget/></NavLink>
                 </NavItem>
             <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>Brands</DropdownToggle>
