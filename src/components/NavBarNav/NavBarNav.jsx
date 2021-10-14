@@ -35,13 +35,13 @@ return (
                     <NavLink exact to="./Productos" className="text-dark text-decoration-none">Smart Phones</NavLink>
                 </NavItem>
                 <NavItem className="mx-4">
-                    <NavLink exact to="/Productos" className="text-dark text-decoration-none">Smart Watches</NavLink>
+                    <NavLink exact to="./Productos" className="text-dark text-decoration-none">Smart Watches</NavLink>
                 </NavItem>
                 <NavItem className="mx-4">
-                    <NavLink exact to="/Productos" className="text-dark text-decoration-none" navbar>Accesories</NavLink>
+                    <NavLink exact to="./Productos" className="text-dark text-decoration-none" navbar>Accesories</NavLink>
                 </NavItem>
                 <NavItem className="mx-4">
-                <NavLink exact to="/CartProducts" className="text-decoration-none"><CartWidget/></NavLink>
+                <NavLink exact to="./CartProducts" className="text-decoration-none"><CartWidget/></NavLink>
                 </NavItem>
             <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>Brands</DropdownToggle>
