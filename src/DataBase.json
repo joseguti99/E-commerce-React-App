@@ -1,0 +1,91 @@
+[
+    {
+        "category":"celular",
+        "id": "0",
+        "title":"Motorola E6",
+        "model":"motorola",
+        "price": 40000,
+        "stock": 5,
+        "description":"Light, fast and compact cell phone",
+        "storage":"64gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/e6.png?raw=true"
+    },
+    {
+        "category":"celular",
+        "id": "1",
+        "title":"Motorola E7",
+        "model":"motorola",
+        "price": 42000,
+        "stock": 7,
+        "description":"Light, fast and compact cell phone",
+        "storage":"64gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/e7.png?raw=true"
+    },
+    {
+        "category":"celular",
+        "id": "2",
+        "title":"Motorola G9",
+        "model":"motorola",
+        "price":65000,
+        "stock": 9,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/g9.png?raw=true"
+    },
+    {
+        "category":"celular",
+        "id":"3",
+        "title":"Motorola G9 Plus",
+        "model":"motorola",
+        "price":70000,
+        "stock": 6,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img": "https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/g9plus.png?raw=true"
+    },
+    {
+        "category":"celular",
+        "id":"4",
+        "title":"Motorola G9 Power",
+        "model":"motorola",
+        "price":55000,
+        "stock": 10,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/g9power.png?raw=true"
+    },
+    {
+        "category":"celular",
+        "id":"5",
+        "title":"Motorola G20",
+        "model":"motorola",
+        "price":60000,
+        "stock": 7,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/g20.png?raw=true"
+    },
+    {
+        "category":"celular",
+        "id":"6",
+        "title":"Motorola G30",
+        "model":"motorola",
+        "price":67000,
+        "stock": 9,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/motog30.png?raw=true"
+    },
+    {
+        "category":"celular",
+        "id":"7",
+        "title":"Motorola One",
+        "model":"motorola",
+        "price":48000,
+        "stock": 9,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/one.png?raw=true"
+    }
+
+]

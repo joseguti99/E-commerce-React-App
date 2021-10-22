@@ -1,8 +1,6 @@
 import './App.css';
 //Rutas Link
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-import movile from './components/SideBar/movile.png'
-import NavBarNav from './components/NavBarNav';
 import SideBar from './components/SideBar'
 import Inicio from './components/pages/Inicio'
 import Ofertas from './components/pages/Ofertas'
