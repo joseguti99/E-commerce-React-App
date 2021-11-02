@@ -1,15 +1,13 @@
 import React from 'react';
 import react, {Component} from "react";
 import styles from "./Ofertas.module.css";
-import {Card, CardBody, Button, CardTitle, CardText, CardImg} from 'reactstrap';
 import NavBarNav from '../../NavBarNav';
-import CardProducts from '../../CardProducts'
+import ItemDetailContainer from '../../ItemDetailContainer'
 
 const Ofertas = (props) => {
     return (
         <>
         <NavBarNav/>
-        <CardProducts/>
         </>
     );
 };

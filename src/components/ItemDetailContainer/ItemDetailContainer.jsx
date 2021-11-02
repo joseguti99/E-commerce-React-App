@@ -1,11 +1,9 @@
 import React from 'react'
-import {useEffect, useState} from 'react'
-import DataBase from '../../DataBase.json'
-import ItemList from '../ItemList'
+import { useEffect, useState } from 'react';
+import DataBase from '../../DataBase.json';
+import ItemDetail from '../ItemDetail';
 
-//logica de productos, traer json y poner el elemento <itemList/>
-
-const ItemListContainer = () => {
+const ItemDetailContainer = () => {
     const [product, setProduct] = useState([]);
 
     const getProduct = (data) => new Promise((resolve, reject) => {
@@ -24,13 +22,14 @@ const ItemListContainer = () => {
         .catch((err)=> console.log(err));
     },[]);
 
-    
     return(
         !product ? 'cargando...' : 
-            product.map(product => {
+            product
+            .filter(product => product.id == 0)
+            .map(product => {
         return (
             <>
-            <ItemList key={product.id} titleCard={product.title} priceCard={product.price} imgCard={product.img} stockCard={product.stock}/>
+            <ItemDetail key={product.id} titleDetail={product.title} descriptionDetail={product.description} priceDetail={product.price} imgDetail={product.img} stockDetail={product.stock}/>
             </>
             
             
@@ -40,5 +39,4 @@ const ItemListContainer = () => {
 )
 }
 
-export default ItemListContainer;
-
+export default ItemDetailContainer;

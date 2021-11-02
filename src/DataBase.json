@@ -1,6 +1,6 @@
 [
     {
-        "category":"celular",
+        "category":"smartphone",
         "id": "0",
         "title":"Motorola E6",
         "model":"motorola",
@@ -11,7 +11,7 @@
         "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/e6.png?raw=true"
     },
     {
-        "category":"celular",
+        "category":"smartphone",
         "id": "1",
         "title":"Motorola E7",
         "model":"motorola",
@@ -22,7 +22,7 @@
         "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/e7.png?raw=true"
     },
     {
-        "category":"celular",
+        "category":"smartphone",
         "id": "2",
         "title":"Motorola G9",
         "model":"motorola",
@@ -33,7 +33,7 @@
         "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/g9.png?raw=true"
     },
     {
-        "category":"celular",
+        "category":"smartphone",
         "id":"3",
         "title":"Motorola G9 Plus",
         "model":"motorola",
@@ -44,7 +44,7 @@
         "img": "https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/g9plus.png?raw=true"
     },
     {
-        "category":"celular",
+        "category":"smartphone",
         "id":"4",
         "title":"Motorola G9 Power",
         "model":"motorola",
@@ -55,7 +55,7 @@
         "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/g9power.png?raw=true"
     },
     {
-        "category":"celular",
+        "category":"smartphone",
         "id":"5",
         "title":"Motorola G20",
         "model":"motorola",
@@ -66,7 +66,7 @@
         "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/g20.png?raw=true"
     },
     {
-        "category":"celular",
+        "category":"smartphone",
         "id":"6",
         "title":"Motorola G30",
         "model":"motorola",
@@ -77,7 +77,7 @@
         "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/motog30.png?raw=true"
     },
     {
-        "category":"celular",
+        "category":"smartphone",
         "id":"7",
         "title":"Motorola One",
         "model":"motorola",
@@ -86,6 +86,357 @@
         "description":"Light, fast and compact cell phone",
         "storage":"128gb",
         "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/motorola/one.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"8",
+        "title":"Samsung Galaxy A02",
+        "model":"samsung",
+        "price":42999,
+        "stock":11,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/Samsung/a02.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"9",
+        "title":"Samsung Galaxy A12",
+        "model":"samsung",
+        "price":43599,
+        "stock": 14,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/Samsung/a12.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"10",
+        "title":"Samsung Galaxy A32",
+        "model":"samsung",
+        "price":46999,
+        "stock":13,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/Samsung/a32.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"11",
+        "title":"Samsung Galaxy A52",
+        "model":"samsung",
+        "price":52999,
+        "stock":15,
+        "description":"Light, fast and compact cell phone",
+        "storage":"256gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/Samsung/a52.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"12",
+        "title":"Samsung Galaxy Note 20",
+        "model":"samsung",
+        "price":75999,
+        "stock":12,
+        "description":"Light, fast and compact cell phone",
+        "storage":"256gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/Samsung/note20.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"13",
+        "title":"Samsung Galaxy S20",
+        "model":"samsung",
+        "price":65999,
+        "stock":15,
+        "description":"Light, fast and compact cell phone",
+        "storage":"256gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/Samsung/s20.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"14",
+        "title":"Samsung Galaxy S21",
+        "model":"samsung",
+        "price":75999,
+        "stock":13,
+        "description":"Light, fast and compact cell phone",
+        "storage":"256gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/Samsung/s21.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"15",
+        "title":"Samsung Galaxy S21 Pro",
+        "model":"samsung",
+        "price":79999,
+        "stock":12,
+        "description":"Light, fast and compact cell phone",
+        "storage":"480gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/Samsung/s21rosa.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"16",
+        "title":"Xiaomi A9",
+        "model":"xiaomi",
+        "price":35999,
+        "stock":13,
+        "description":"Light, fast and compact cell phone",
+        "storage":"64gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/xiaomi/9a.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"17",
+        "title":"Xiaomi 9T",
+        "model":"xiaomi",
+        "price":38599,
+        "stock":11,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/xiaomi/9t.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"18",
+        "title":"Xiaomi F3",
+        "model":"xiaomi",
+        "price":32599,
+        "stock":17,
+        "description":"Light, fast and compact cell phone",
+        "storage":"64gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/xiaomi/f3.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"19",
+        "title":"Xiaomi M3",
+        "model":"xiaomi",
+        "price":37499,
+        "stock":12,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/xiaomi/m3.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"20",
+        "title":"xiaomi Mi 11",
+        "model":"xiaomi",
+        "price":51999,
+        "stock":13,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/xiaomi/mi11.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"21",
+        "title":"Xiaomi Note 8",
+        "model":"xiaomi",
+        "price":62599,
+        "stock":0,
+        "description":"Light, fast and compact cell phone",
+        "storage":"64gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/xiaomi/note8.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"22",
+        "title":"Xiaomi Note 9",
+        "model":"xiaomi",
+        "price":65499,
+        "stock":13,
+        "description":"Light, fast and compact cell phone",
+        "storage":"128gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/xiaomi/note9.png?raw=true"
+    },
+    {
+        "category":"smartphone",
+        "id":"23",
+        "title":"xiaomi Poco 3",
+        "model":"xiaomi",
+        "price":46599,
+        "stock":15,
+        "description":"Light, fast and compact cell phone",
+        "storage":"64gb",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/xiaomi/pocox3.png?raw=true"
+    },
+    {
+        "category":"smartwatch",
+        "id":"24",
+        "title":"Apple Watch Nike-Air",
+        "model":"apple",
+        "price": 34999,
+        "stock": 12,
+        "description":"powerful, ultra-durable and waterproof smartwatch",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/smartwatch/apple-nike.png?raw=true"
+    },
+    {
+        "category":"smartwatch",
+        "id":"25",
+        "title":"Apple Serie 6",
+        "model":"apple",
+        "price": 31999,
+        "stock": 14,
+        "description":"powerful, ultra-durable and waterproof smartwatch",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/smartwatch/apple-serie-6.png?raw=true"
+    },
+    {
+        "category":"smartwatch",
+        "id":"26",
+        "title":"Apple Serie 3",
+        "model":"apple",
+        "price": 29999,
+        "stock": 8,
+        "description":"powerful, ultra-durable and waterproof smartwatch",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/smartwatch/apple-watch-s3.png?raw=true"
+    },
+    {
+        "category":"smartwatch",
+        "id":"27",
+        "title":"Galaxy Watch S4",
+        "model":"samsung",
+        "price": 27999,
+        "stock": 10,
+        "description":"powerful, ultra-durable and waterproof smartwatch",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/smartwatch/galaxy-watch-4.png?raw=true"
+    },
+    {
+        "category":"smartwatch",
+        "id":"28",
+        "title":"Garmin Watch-X",
+        "model":"samsung",
+        "price": 32999,
+        "stock": 14,
+        "description":"powerful, ultra-durable and waterproof smartwatch",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/smartwatch/garmin-watch.png?raw=true"
+    },
+    {
+        "category":"smartwatch",
+        "id":"29",
+        "title":"FibiWatch S10",
+        "model":"samsung",
+        "price": 28999,
+        "stock": 16,
+        "description":"powerful, ultra-durable and waterproof smartwatch",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/smartwatch/smartwatch-fibi.png?raw=true"
+    },
+    {
+        "category":"smartwatch",
+        "id":"30",
+        "title":"SmartWatch G-PRO",
+        "model":"samsung",
+        "price": 33999,
+        "stock": 13,
+        "description":"powerful, ultra-durable and waterproof smartwatch",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/smartwatch/smart-watch-gt.png?raw=true"
+    },
+    {
+        "category":"smartwatch",
+        "id":"31",
+        "title":"SmartWatch X-OMI",
+        "model":"samsung",
+        "price": 26999,
+        "stock": 11,
+        "description":"powerful, ultra-durable and waterproof smartwatch",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/smartwatch/smart-watch-xiaomi.png?raw=true"
+    },
+    {
+        "category":"accesories",
+        "id":"32",
+        "title":"Samsung car charger",
+        "model":"samsung",
+        "price": 959,
+        "stock": 25,
+        "description":"accesories charger",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/accesorios/cargador-usb-auto.png?raw=true"
+    },
+    {
+        "category":"accesories",
+        "id":"33",
+        "title":"wireless charger phone",
+        "model":"samsung",
+        "price": 1199,
+        "stock": 10,
+        "description":"wireless charger phone",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/accesorios/cgd-inalambric.png?raw=true"
+    },
+    {
+        "category":"accesories",
+        "id":"34",
+        "title":"Portable phone charger",
+        "model":"samsung",
+        "price": 1299,
+        "stock": 20,
+        "description":"Portable phone charger",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/accesorios/cargador-portatil.png?raw=true"
+    },
+    {
+        "category":"accesories",
+        "id":"35",
+        "title":"Charger power-100",
+        "model":"",
+        "price": 1499,
+        "stock": 15,
+        "description":"",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/accesorios/cargador-power-portatil.png?raw=true"
+    },
+    {
+        "category":"accesories",
+        "id":"36",
+        "title":"Charger fast Samsung", 
+        "model":"",
+        "price": 649,
+        "stock": 45,
+        "description":"",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/accesorios/cargador-tipo-c.png?raw=true"
+    },
+    {
+        "category":"accesories",
+        "id":"37",
+        "title":"Gamepad Pro",
+        "model":"",
+        "price": 2499,
+        "stock": 16,
+        "description":"",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/accesorios/gamepad.png?raw=true"
+    },
+    {
+        "category":"accesories",
+        "id":"38",
+        "title":"phone holder X-50",
+        "model":"",
+        "price": 1599,
+        "stock": 13,
+        "description":"",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/accesorios/soporte-bici.png?raw=true"
+    },
+    {
+        "category":"accesories",
+        "id":"37",
+        "title":"Cell tripod Pro",
+        "model":"",
+        "price": 899,
+        "stock": 11,
+        "description":"",
+        "storage":"",
+        "img":"https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/accesorios/tripode-smart.png?raw=true"
     }
-
 ]
