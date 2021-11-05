@@ -1,11 +1,12 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import DataBase from '../../DBProducts.json';
+import DataBase from '../../DataBase.json';
 import ItemDetail from '../ItemDetail';
-import { useParams } from 'react-router-dom';
+import {useParams} from 'react-router-dom'
 
-const ItemDetailContainer = (props) => {
-    const [product, setProduct] = useState([]);
+const ItemDetailContainer = () => {
+    const [product, setProduct] = useState("");
+    const {itemId} = useParams("")
 
     const getProduct = (data) => new Promise((resolve, reject) => {
         setTimeout(() =>{
@@ -14,29 +15,20 @@ const ItemDetailContainer = (props) => {
             } else {
                 reject("La ruta no se pudo encontrar");
             }
-        }, 3000)
+        }, 1500)
     });
 
     useEffect(()=>{
         getProduct(DataBase)
-        .then((res) => setProduct(res))
+        .then((res) => {setProduct(res.find((producto) => producto.id === itemId));})
         .catch((err)=> console.log(err));
-    },[]);
-
+    },[itemId]);
+    
+    console.log(itemId);
     return(
-        !product ? 'cargando...' : 
-            product
-            // .filter(product => product.id == )
-            .map(product => {
-        return (
-            <>
-            <ItemDetail key={product.id} titleDetail={product.title} descriptionDetail={product.description} priceDetail={product.price} imgDetail={product.img} stockDetail={product.stock}/>
-            </>
-
-
-        )
-    })
-
+        <>
+            <ItemDetail item={product}/>
+        </>
 )
 }
 

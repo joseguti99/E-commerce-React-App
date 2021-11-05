@@ -1,27 +1,36 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import DataBase from '../../DBProducts.json'
 import NavBarNav from '../NavBarNav'
-import ItemListContainer from '../ItemListContainer'
+import ItemList from '../ItemList'
 
 const Categories = () => {
+    const [products, setProducts] = useState([]);
     const {categoryId} = useParams()
 
-    const [category, setcategory] = useState(null);
+    const getProduct = (data) => new Promise((resolve, reject) => {
+        setTimeout(() =>{
+            if(data){
+                resolve(data);
+            } else {
+                reject("La ruta no se pudo encontrar");
+            }
+        }, 1500)
+    });
+
 
     useEffect(() => {
-        fetch(`http://localhost:3001/product?category=${categoryId}`)
-        .then((response) => response.json())
-        .then((data) => setcategory(data));
+        getProduct(DataBase)
+        .then((res) => setProducts(res.filter((items) => items.category === categoryId)))
+        .then((data) => setProducts(data));
     }, [categoryId]);
 
-    if (!category) return null;
-
+    console.log(products)
     return (
         <>
         <NavBarNav/>
-        <h1>Categoria:{categoryId}</h1>
-        <ItemListContainer/>
+        <ItemList products={products} />
         </>
     )
 }

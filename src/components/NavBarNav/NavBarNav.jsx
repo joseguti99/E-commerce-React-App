@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink} from "react-router-dom";
+import { Link} from "react-router-dom";
 import style from './NavBarNav.module.css'
 import CartWidget from '../CartWidget/index'
 import ItemListContainer from '../ItemDetailContainer'
@@ -27,16 +27,16 @@ return (
         <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto" navbar>
                 <NavItem className="mx-4 my-3" >
-                    <NavLink exact to="/Products/smartphone" className="text-dark text-decoration-none">smartphones</NavLink>
+                    <Link to="/category/smartphone" className="text-dark text-decoration-none">smartphones</Link>
                 </NavItem>
                 <NavItem className="mx-4 my-3">
-                    <NavLink exact to="/Products/smartwatch" className="text-dark text-decoration-none">smartwatch</NavLink>
+                    <Link to="/category/smartwatch" className="text-dark text-decoration-none">smartwatch</Link>
                 </NavItem>
                 <NavItem className="mx-4 my-3">
-                    <NavLink exact to="/Products/accesories" className="text-dark text-decoration-none">accesories</NavLink>
+                    <Link to="/category/accesories" className="text-dark text-decoration-none">accesories</Link>
                 </NavItem>
                 <NavItem className="mx-4 my-3">
-                <NavLink exact to="/CartProducts" className="text-decoration-none"><CartWidget/></NavLink>
+                <Link exact to="/CartProducts" className="text-decoration-none"><CartWidget/></Link>
                 </NavItem>
             <UncontrolledDropdown nav inNavbar className="my-2">
                 <DropdownToggle nav caret>Sort by Price</DropdownToggle>

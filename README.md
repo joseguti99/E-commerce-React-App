@@ -1,6 +1,4 @@
 # My first React App E-commerce
 
-Instrucciones para ejecutar mi API JsonServer
-
-En terminal escribir: npm run json
+NO ARRANCAR JSON SERVER, LO CAMBIE POR ARCHIVO JSON COMUN A LA BASE DE DATOS / LO DESACTIVE PARA QUE SEA MAS SENCILLA LA CORRECCION SI AL FINAL VAMOS A USAR FIREBASE
 

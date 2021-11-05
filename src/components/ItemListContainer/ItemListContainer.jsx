@@ -1,11 +1,12 @@
 import React from 'react'
-import {useEffect, useState, useParams} from 'react'
+import {useEffect, useState} from 'react'
+import { useParams } from 'react-router-dom'
 import DataBase from '../../DBProducts.json'
 import ItemList from '../ItemList'
-import Categories from '../Categories'
 
 const ItemListContainer = () => {
-    const [product, setProduct] = useState([]);
+    const [products, setProducts] = useState([]);
+    const{ categoryId } = useParams;
 
     const getProduct = (data) => new Promise((resolve, reject) => {
         setTimeout(() =>{
@@ -19,23 +20,19 @@ const ItemListContainer = () => {
 
     useEffect(()=>{
         getProduct(DataBase)
-        .then((res) => setProduct(res))
-        .catch((err)=> console.log(err));
-    },[]);
+        .then((res) => {
+            categoryId
+            ? setProducts(res.filter((product) => product.category === categoryId))
+            : setProducts(DataBase);
+        })
+        .catch((err) => console.log(err));
+    }, [categoryId]);
 
     return(
-        !product ? 'cargando...' : 
-        product
-            .map(product => {
-        return (
             <>
-            <ItemList key={product.id} titleCard={product.title} priceCard={product.price} imgCard={product.img} stockCard={product.stock}/>
+            <ItemList items={products}/>
             </>
         )
-    })
-    
-)
 }
 
 export default ItemListContainer;
-

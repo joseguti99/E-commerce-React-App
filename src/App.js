@@ -7,7 +7,9 @@ import Productos from './components/pages/Productos'
 import Contact from './components/pages/Contact'
 import CartProducts from './components/CartProducts'
 import ItemDetailContainer from './components/ItemDetailContainer'
+import Products from './components/pages/Productos'
 import Categories from './components/Categories'
+import NavBarNav from './components/NavBarNav';
 
 function App() {
   return (
@@ -22,7 +24,8 @@ function App() {
             <Route exact path ="/Products" component = {Productos} />
             <Route exact path ="/Contact" component = {Contact} />
             <Route exact path ="/CartProducts" component = {CartProducts} />
-            <Route exact path="/Products/:categoryId" component= {Categories}/>
+            <Route exact path="/category/:categoryId" component= {Products}/>
+            <Route exact path="/item/:id" component={ItemDetailContainer}/>
             <Route exact path="*"><h1>Se ha producido un error, la pagina no fue encontrada!</h1></Route>
           </Switch>
         </div>
