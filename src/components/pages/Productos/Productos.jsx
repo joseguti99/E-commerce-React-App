@@ -7,9 +7,9 @@ const Productos =  () => {
     return ( 
         <>
         <NavBarNav/>
-        <div className="row mx-1">
-            <ItemListContainer/>
-        </div>
+            <div className="row mx-1">
+                <ItemListContainer/>
+            </div>
         </>
     );
 }

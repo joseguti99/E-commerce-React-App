@@ -8,6 +8,7 @@ const Ofertas = (props) => {
     return (
         <>
         <NavBarNav/>
+            {/* <h1 className="text-center my-5 border">OFFERS IN CONSTRUCTION</h1> */}
         </>
     );
 };

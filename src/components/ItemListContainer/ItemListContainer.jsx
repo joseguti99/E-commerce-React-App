@@ -1,9 +1,8 @@
 import React from 'react'
-import {useEffect, useState} from 'react'
-import DataBase from '../../DataBase.json'
+import {useEffect, useState, useParams} from 'react'
+import DataBase from '../../DBProducts.json'
 import ItemList from '../ItemList'
-
-//logica de productos, traer json y poner el elemento <itemList/>
+import Categories from '../Categories'
 
 const ItemListContainer = () => {
     const [product, setProduct] = useState([]);
@@ -15,7 +14,7 @@ const ItemListContainer = () => {
             } else {
                 reject("La ruta no se pudo encontrar");
             }
-        }, 3000)
+        }, 2000)
     });
 
     useEffect(()=>{
@@ -24,16 +23,14 @@ const ItemListContainer = () => {
         .catch((err)=> console.log(err));
     },[]);
 
-    
     return(
         !product ? 'cargando...' : 
-            product.map(product => {
+        product
+            .map(product => {
         return (
             <>
             <ItemList key={product.id} titleCard={product.title} priceCard={product.price} imgCard={product.img} stockCard={product.stock}/>
             </>
-            
-            
         )
     })
     

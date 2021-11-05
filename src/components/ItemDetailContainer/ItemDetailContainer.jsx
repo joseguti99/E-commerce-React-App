@@ -1,9 +1,10 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import DataBase from '../../DataBase.json';
+import DataBase from '../../DBProducts.json';
 import ItemDetail from '../ItemDetail';
+import { useParams } from 'react-router-dom';
 
-const ItemDetailContainer = () => {
+const ItemDetailContainer = (props) => {
     const [product, setProduct] = useState([]);
 
     const getProduct = (data) => new Promise((resolve, reject) => {
@@ -25,17 +26,17 @@ const ItemDetailContainer = () => {
     return(
         !product ? 'cargando...' : 
             product
-            .filter(product => product.id == 0)
+            // .filter(product => product.id == )
             .map(product => {
         return (
             <>
             <ItemDetail key={product.id} titleDetail={product.title} descriptionDetail={product.description} priceDetail={product.price} imgDetail={product.img} stockDetail={product.stock}/>
             </>
-            
-            
+
+
         )
     })
-    
+
 )
 }
 

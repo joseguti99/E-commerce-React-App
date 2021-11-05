@@ -18,7 +18,7 @@ const SideBar = () => {
                         <NavLink exact to="/" activeStyle={{borderBottom: "1px solid orange", color:"orange"}} className="text-decoration-none py-2 w-100 d-inline-block" ><FaIcons.FaHome className="me-3 rounded"/> Home</NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/Ofertas" activeStyle={{borderBottom: "1px solid orange", color:"orange"}} className="text-decoration-none py-2 w-100 d-inline-block" ><MdIcons.MdLoyalty className="me-3 rounded"/>Offers</NavLink>
+                        <NavLink exact to="/Offers" activeStyle={{borderBottom: "1px solid orange", color:"orange"}} className="text-decoration-none py-2 w-100 d-inline-block" ><MdIcons.MdLoyalty className="me-3 rounded"/>Offers</NavLink>
                     </li>
                     <li>
                         <NavLink exact to="/Products" activeStyle={{borderBottom: "1px solid orange", color:"orange"}} className="text-decoration-none py-2 w-100 d-inline-block" ><MdIcons.MdDashboard className="me-3 rounded"/>Products</NavLink>

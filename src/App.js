@@ -1,32 +1,33 @@
 import './App.css';
-//Rutas Link
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import SideBar from './components/SideBar'
 import Inicio from './components/pages/Inicio'
 import Ofertas from './components/pages/Ofertas'
 import Productos from './components/pages/Productos'
 import Contact from './components/pages/Contact'
 import CartProducts from './components/CartProducts'
-import ItemDetail from './components/ItemDetail'
 import ItemDetailContainer from './components/ItemDetailContainer'
-import ItemCount from './components/ItemCount'
+import Categories from './components/Categories'
 
 function App() {
   return (
     <>
-    <Router> 
-      <div className="d-flex">
+    <BrowserRouter> 
+    <div className="d-flex">
       <SideBar/>
-      <div className="content w-100">
-        <Route path ="/" exact= {true} component = {Inicio} />
-        <Route path ="/Ofertas" exact= {true} component = {Ofertas} />
-        <Route path ="/Products" exact= {true} component = {Productos} />
-        <Route path ="/Contact" exact= {true} component = {Contact} />
-        <Route path ="/CartProducts" exact= {true} component = {CartProducts} />
-        <Route path ="/Products/ItemDetailContainer" exact= {true} component = {ItemDetailContainer} />
+        <div className="content w-100">
+          <Switch>
+            <Route exact path ="/" component={Inicio}/>
+            <Route exact path ="/Offers" component = {Ofertas}/>
+            <Route exact path ="/Products" component = {Productos} />
+            <Route exact path ="/Contact" component = {Contact} />
+            <Route exact path ="/CartProducts" component = {CartProducts} />
+            <Route exact path="/Products/:categoryId" component= {Categories}/>
+            <Route exact path="*"><h1>Se ha producido un error, la pagina no fue encontrada!</h1></Route>
+          </Switch>
         </div>
-      </div>
-    </Router>
+    </div>
+    </BrowserRouter>
     </>
   );
 }
