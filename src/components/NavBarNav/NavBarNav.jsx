@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link} from "react-router-dom";
 import style from './NavBarNav.module.css'
 import CartWidget from '../CartWidget/index'
-import ItemListContainer from '../ItemDetailContainer'
 
 import {
 Collapse,
@@ -16,7 +15,7 @@ DropdownMenu,
 DropdownItem,
 } from 'reactstrap';
 
-const NavBarNav = (props) => {
+const NavBarNav = () => {
 const [isOpen, setIsOpen] = useState(false);
 
 const toggle = () => setIsOpen(!isOpen);

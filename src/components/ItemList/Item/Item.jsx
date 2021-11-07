@@ -7,7 +7,7 @@ const Item = ({ item }) => {
         <div className="col-3 mb-5">
                 <div className="card h-100">
                     <div>
-                        <Link to={`/item/${item.id}`}>
+                        <Link key={item.id} exact to={`/item/${item.id}`}>
                             <img className="card-img-top" src={item.img} alt="..." />
                         </Link>
                     </div>

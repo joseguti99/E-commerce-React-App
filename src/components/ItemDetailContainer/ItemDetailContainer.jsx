@@ -3,10 +3,11 @@ import { useEffect, useState } from 'react';
 import DataBase from '../../DataBase.json';
 import ItemDetail from '../ItemDetail';
 import {useParams} from 'react-router-dom'
+import NavBarNav from '../NavBarNav'
 
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState("");
-    const {itemId} = useParams("")
+    const { itemId } = useParams()
+    const [product, setProduct] = useState()
 
     const getProduct = (data) => new Promise((resolve, reject) => {
         setTimeout(() =>{
@@ -17,19 +18,19 @@ const ItemDetailContainer = () => {
             }
         }, 1500)
     });
-
+    
     useEffect(()=>{
         getProduct(DataBase)
-        .then((res) => {setProduct(res.find((producto) => producto.id === itemId));})
-        .catch((err)=> console.log(err));
-    },[itemId]);
-    
-    console.log(itemId);
+        .then((res) => setProduct(res.product.find(product => product.id === itemId)))
+		.catch((err) => console.log(err)
+        );
+	}, [itemId]);
+
     return(
         <>
-            <ItemDetail item={product}/>
+        <NavBarNav/>
+            {product ? <ItemDetail item={product}/> : 'Cargando...'}
         </>
 )
 }
-
 export default ItemDetailContainer;

@@ -1,10 +1,12 @@
 import React from 'react'
 import ItemCount from '../ItemCount'
 
-const ItemDetail = ({ item }) => {
+const ItemDetail = ({item}) => {
+
     return (
         <>
-        <section className="py-1">
+        <div key={item.id}>
+            <section className="py-1">
             <div className="container px-4 px-lg-5 my-5">
                 <div className="row gx-4 gx-lg-5 align-items-center">
                     <div className="col-md-6"><img className="card-img-top mb-5 mb-md-0" src={item.img} alt="..." /></div>
@@ -27,9 +29,12 @@ const ItemDetail = ({ item }) => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
+        </div>
         </>
     )
 }
+
+
 
 export default ItemDetail;

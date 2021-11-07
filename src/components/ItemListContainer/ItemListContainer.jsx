@@ -5,8 +5,9 @@ import DataBase from '../../DBProducts.json'
 import ItemList from '../ItemList'
 
 const ItemListContainer = () => {
+    const{ categoryId } = useParams()
     const [products, setProducts] = useState([]);
-    const{ categoryId } = useParams;
+    
 
     const getProduct = (data) => new Promise((resolve, reject) => {
         setTimeout(() =>{
@@ -20,19 +21,26 @@ const ItemListContainer = () => {
 
     useEffect(()=>{
         getProduct(DataBase)
-        .then((res) => {
-            categoryId
-            ? setProducts(res.filter((product) => product.category === categoryId))
-            : setProducts(DataBase);
-        })
-        .catch((err) => console.log(err));
-    }, [categoryId]);
+        .then((res) => setProducts(res.filter(product => product.category === categoryId)))
+		.catch((err) => console.log(err));
+	}, [categoryId]);
 
+    console.log(categoryId)
     return(
             <>
-            <ItemList items={products}/>
+            <ItemList key={products.id} items={products}/>
             </>
         )
 }
+
+// getProduct(DataBase)
+//         .then((result) => {
+//             categoryId
+//             ? setProducts(result.filter(product => product.category = categoryId))
+//             : setProducts(DataBase);
+//         })
+//         .catch((err) => console.log(err));
+//     }, [categoryId]);
+
 
 export default ItemListContainer;
