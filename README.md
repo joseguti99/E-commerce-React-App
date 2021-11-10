@@ -1,7 +1,5 @@
 # My first React App E-commerce
 
-GIFT PRIMER ENTREGA FINAL
+GIFT EVENTOS
 
-NO ES NECESARIO ACTIVAR EL LOCALHOST 3001 (JsonSERVER)
-
-![App Running](https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/gift/PRIMER-ENTREGA-REACT.gif)
+![App Running](https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/gift/EVENTOS.gif)
