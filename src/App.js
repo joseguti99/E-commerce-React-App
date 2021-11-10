@@ -19,7 +19,7 @@ function App() {
             <Route exact path ="/" component={Inicio}/>
             <Route exact path ="/Offers" component = {Ofertas}/>
             <Route exact path ="/Contact" component = {Contact} />
-            <Route exact path ="/CartProducts" component = {CartProducts} />
+            <Route exact path ="/Cart" component = {CartProducts} />
             <Route exact path="/category/:categoryId" component= {Products}/>
             <Route exact path="/item/:itemId" component={ItemDetailContainer}/>
             <Route exact path="*"><h1>Se ha producido un error, la pagina no fue encontrada!</h1></Route>

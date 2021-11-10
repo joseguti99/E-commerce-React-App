@@ -1,7 +1,17 @@
-import React from 'react'
+import {useState} from 'react'
 import ItemCount from '../ItemCount'
+import { Link } from 'react-router-dom'
+import { Button } from 'reactstrap'
 
 const ItemDetail = ({item}) => {
+    const [flag, setFlag] = useState (true)
+    const [countCart, setCountCart] = useState (0)
+    //display stock en true para que siempre se muestre
+
+    const onAddClick = (count) =>{
+        setFlag(false)
+        alert('Se agregaron '+ count + ' items al carrito' )
+    };
 
     return (
         <>
@@ -19,13 +29,12 @@ const ItemDetail = ({item}) => {
                         <p className="lead">{item.description}</p>
                         <div className="d-flex">
                             <div className="mx-3">
-                            <ItemCount/>
+                                {flag && <ItemCount item={item} onAdd={onAddClick} />} 
                             </div>
-                            <button className="btn btn-outline-dark flex-shrink-0" type="button">
-                                <i className="bi-cart-fill me-1"></i>
-                                Add to cart
-                            </button>
                         </div>
+                        <div className="text-center col-11">
+                                {<Link exact to="/Cart"><button className="btn btn-outline-dark flex-shrink-0 mb-2">CartView</button></Link>}
+                            </div>
                     </div>
                 </div>
             </div>
@@ -34,7 +43,5 @@ const ItemDetail = ({item}) => {
         </>
     )
 }
-
-
 
 export default ItemDetail;

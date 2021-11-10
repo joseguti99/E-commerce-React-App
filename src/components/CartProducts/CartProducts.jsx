@@ -1,7 +1,3 @@
-import { IconName } from "react-icons/gr";
-import styles from "./CartProducts.module.css";
-import { NavLink } from "react-router-dom";
-
 const CartProducts = () => {
     return(
     <>
