@@ -1,10 +1,14 @@
 import React from 'react'
-import {useState} from "react";
-import { Link } from 'react-router-dom'
+import {useState, useContext} from "react";
+import {addItem} from '../CartContext/CartContext'
+import {CartContext} from '../CartContext/CartContext'
 
 const ItemCount = (item) => {
     const [count, setCount] = useState(0);
+    const {addItem} = useContext(CartContext)
     const stockItem = item.item.stock
+    const itemSelected = item.item
+    // const {cart, setCart}= useContext(CartContext)
 
     const increment = (e) => {
         e.preventDefault();
@@ -21,6 +25,7 @@ const ItemCount = (item) => {
         if (count !== 0) {
             item.onAdd(count);
         }
+        addItem(itemSelected, count)
     }
 
     return (

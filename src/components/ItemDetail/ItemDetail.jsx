@@ -1,16 +1,17 @@
-import {useState} from 'react'
+import {useState, useContext} from 'react'
 import ItemCount from '../ItemCount'
 import { Link } from 'react-router-dom'
-import { Button } from 'reactstrap'
+import { CartContext} from '../CartContext/CartContext.jsx'
 
 const ItemDetail = ({item}) => {
     const [flag, setFlag] = useState (true)
     const [countCart, setCountCart] = useState (0)
-    //display stock en true para que siempre se muestre
+    const {cart, setCart} = useContext(CartContext)
 
     const onAddClick = (count) =>{
         setFlag(false)
         alert('Se agregaron '+ count + ' items al carrito' )
+        setCart(item)
     };
 
     return (
@@ -29,7 +30,7 @@ const ItemDetail = ({item}) => {
                         <p className="lead">{item.description}</p>
                         <div className="d-flex">
                             <div className="mx-3">
-                                {flag && <ItemCount item={item} onAdd={onAddClick} />} 
+                                {flag && <ItemCount item={item} onAdd={onAddClick} />}
                             </div>
                         </div>
                         <div className="text-center col-11">

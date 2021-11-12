@@ -35,7 +35,7 @@ return (
                     <Link to="/category/accesories" className="text-dark text-decoration-none">accesories</Link>
                 </NavItem>
                 <NavItem className="mx-4 my-3">
-                <Link exact to="/CartProducts" className="text-decoration-none"><CartWidget/></Link>
+                <Link exact to="/Cart" className="text-decoration-none"><CartWidget/></Link>
                 </NavItem>
             <UncontrolledDropdown nav inNavbar className="my-2">
                 <DropdownToggle nav caret>Sort by Price</DropdownToggle>
