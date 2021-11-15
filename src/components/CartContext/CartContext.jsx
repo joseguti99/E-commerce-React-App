@@ -8,8 +8,6 @@ export const CartProvider =  ({ children }) => {
     const addItem = (item, quantity) => {
         const ItemCart = {...item, count: quantity};
         const inCart = cart.some( product => product.id === item.id)
-
-        console.log(!inCart)
         if(!inCart){
             setCart([...cart, ItemCart])
         }else{  
@@ -19,16 +17,14 @@ export const CartProvider =  ({ children }) => {
         }
         return;
     };
-
+    
     const removeItem = (id) => {
-        console.log("click")
+        setCart([cart.filter(item => item.id !== id)])
     };
 
     const removeAll = () =>{
         setCart([])
     }
-
-    console.log(cart)
 
     return(
         <CartContext.Provider value={ {cart, setCart, addItem, removeItem, removeAll} }>

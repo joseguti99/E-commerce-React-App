@@ -20,7 +20,14 @@ const CartProducts = () => {
             </thead>
             <tbody>
                 {cart.length
-                ? cart.map((product) => <CartItem product={product}/>): 'Cargando productos...'}
+                ? cart.map((product) => 
+                <tr className="text-center" key={product.id}>
+                    <td className="mx-5 my-5 h4">{product.title}</td>
+                    <td className="mx-5 my-5 h4">{product.count}</td>
+                    <td className="mx-5 my-5 h4">$ {product.price}</td>
+                    <td><button className="btn btn-primary bg-dark m-2" onClick={removeAll}> X </button></td>
+                </tr>
+                ): 'Cargando productos...'}
             </tbody>  
             
         </table>

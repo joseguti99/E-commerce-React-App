@@ -24,8 +24,7 @@ const ItemListContainer = () => {
         .then((res) => setProducts(res.filter(product => product.category === categoryId)))
 		.catch((err) => console.log(err));
 	}, [categoryId]);
-
-    console.log(categoryId)
+    
     return(
             <>
             <ItemList key={products.id} items={products}/>
