@@ -46,15 +46,8 @@ const ItemCount = (item) => {
             </div>
                 <h5>Units available:{item.item.stock}</h5>
             <div>
-                <button className="btn btn-outline-dark flex-shrink-0 mb-2" onClick={(e) => {handleClick(e)}} type="button" >Add To Cart</button>
-            </div>
-            <div>
-                {/* <button className="btn btn-outline-dark flex-shrink-0">
-                    <Link exact to="/Cart">
-                            <i className="bi-cart-fill me-1">
-                                </i>view Cart
-                    
-                </button> */}
+                <button className="btn btn-outline-dark flex-shrink-0 mb-2" onClick={(e) => {handleClick(e)}} type="button" ><i className="bi-cart-fill me-1">
+                                </i>Add To Cart</button>
             </div>
         </div>
         </>

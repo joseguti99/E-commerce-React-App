@@ -7,14 +7,17 @@ export const CartProvider =  ({ children }) => {
 
     const addItem = (item, quantity) => {
         const ItemCart = {...item, count: quantity};
-        const inCart = cart.some((product) => product.id === item.id);
+        const inCart = cart.some( product => product.id === item.id)
+
+        console.log(!inCart)
         if(!inCart){
-            setCart(...cart, ItemCart)
-        }else{
-            const findItem = cart.find((product) => product.id === item.id)
+            setCart([...cart, ItemCart])
+        }else{  
+            const findItem = cart.find(product => product.id === item.id)
             findItem.count = findItem.count + quantity
+            setCart([...cart])
         }
-        return
+        return;
     };
 
     const removeItem = (id) => {
@@ -24,6 +27,8 @@ export const CartProvider =  ({ children }) => {
     const removeAll = () =>{
         setCart([])
     }
+
+    console.log(cart)
 
     return(
         <CartContext.Provider value={ {cart, setCart, addItem, removeItem, removeAll} }>
