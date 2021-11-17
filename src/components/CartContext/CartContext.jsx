@@ -6,25 +6,38 @@ export const CartProvider =  ({ children }) => {
     const [cart, setCart] = useState ([])
 
     const addItem = (item, quantity) => {
-        const ItemCart = {...item, count: quantity};
-        const inCart = cart.some( product => product.id === item.id)
-        if(!inCart){
-            setCart([...cart, ItemCart])
-        }else{  
-            const findItem = cart.find(product => product.id === item.id)
-            findItem.count = findItem.count + quantity
-            setCart([...cart])
-        }
-        return;
+    const product = {
+        title: item.title,
+        price: item.price,
+        count: quantity,
+        id: item.id,
+        img: item.img,
+        stock: item.stock,
     };
-    
-    const removeItem = (id) => {
-        setCart([cart.filter(item => item.id !== id)])
+
+    const existingIndex = cart.findIndex((product => product.title === item.title))
+    if (existingIndex >= 0) {
+        setCart(cart.map((item, index) => (existingIndex === index ? { ...item, count: quantity + quantity } : null)));
+    } else {
+        setCart([...cart, product]);
+    }
+    };
+
+    const removeItem = (title) => {
+        const existingIndex = cart.findIndex((product) => product.title === title);
+        const cartCopy = Array.from(cart);
+        if (existingIndex <= 0) {
+        cartCopy.splice(existingIndex, 1);
+        }
+        setCart(cartCopy);
     };
 
     const removeAll = () =>{
         setCart([])
     }
+
+    
+
 
     return(
         <CartContext.Provider value={ {cart, setCart, addItem, removeItem, removeAll} }>

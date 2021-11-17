@@ -1,9 +1,5 @@
 # My first React App E-commerce
 
-GIFT EVENTOS
+GIFT RENDERING CONDICIONL + CART
 
-![App Running](https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/gift/EVENTOS.gif)
-
-GIFT CART CONTEXT
-
-![App Running](https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/gift/cart-context.gif)
+![App Running](https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/gift/rendering-condicional.gif)

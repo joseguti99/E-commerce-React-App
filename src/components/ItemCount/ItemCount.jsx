@@ -25,7 +25,7 @@ const ItemCount = (item) => {
         if (count !== 0) {
             item.onAdd(count);
         }
-        addItem(itemSelected, count)
+        addItem(itemSelected, count);
     }
 
     return (

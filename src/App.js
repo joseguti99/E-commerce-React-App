@@ -17,14 +17,14 @@ function App() {
         <div className="d-flex">
           {/* <SideBar/> */}
             <div className="content w-100">
-              <Switch>
-                <Route exact path ="/" component={Inicio}/>
-                <Route exact path ="/Offers" component = {Ofertas}/>
-                <Route exact path ="/Contact" component = {Contact} />
-                <Route exact path ="/Cart" component = {CartProducts} />
-                <Route exact path="/category/:categoryId" component= {Products}/>
-                <Route exact path="/item/:itemId" component={ItemDetailContainer}/>
-                <Route exact path="*"><h1>Se ha producido un error, la pagina no fue encontrada!</h1></Route>
+              <Switch>  
+                <Route exact={true} path ="/" component={Inicio}/>
+                <Route exact={true} path ="/Offers" component = {Ofertas}/>
+                <Route exact={true} path ="/Contact" component = {Contact} />
+                <Route exact={true} path ="/Cart" component = {CartProducts} />
+                <Route exact={true} path="/category/:categoryId" component= {Products}/>
+                <Route exact={true} path="/item/:itemId" component={ItemDetailContainer}/>
+                <Route exact={true} path="*"><h1>Se ha producido un error, la pagina no fue encontrada!</h1></Route>
               </Switch>
             </div>
         </div>

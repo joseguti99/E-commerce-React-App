@@ -32,14 +32,4 @@ const ItemListContainer = () => {
         )
 }
 
-// getProduct(DataBase)
-//         .then((result) => {
-//             categoryId
-//             ? setProducts(result.filter(product => product.category = categoryId))
-//             : setProducts(DataBase);
-//         })
-//         .catch((err) => console.log(err));
-//     }, [categoryId]);
-
-
 export default ItemListContainer;

@@ -4,6 +4,7 @@ import DataBase from '../../DataBase.json';
 import ItemDetail from '../ItemDetail';
 import {useParams} from 'react-router-dom'
 import NavBarNav from '../NavBarNav'
+import Spinner from '../Spinner'
 
 const ItemDetailContainer = () => {
     const { itemId } = useParams()
@@ -29,7 +30,7 @@ const ItemDetailContainer = () => {
     return(
         <>
         <NavBarNav/>
-            {product ? <ItemDetail item={product}/> : 'Cargando...'}
+            {product ? <ItemDetail item={product}/> : <Spinner/>}
         </>
 )
 }
