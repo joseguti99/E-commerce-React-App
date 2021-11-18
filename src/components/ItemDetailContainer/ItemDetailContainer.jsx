@@ -1,14 +1,15 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import DataBase from '../../DataBase.json';
 import ItemDetail from '../ItemDetail';
 import {useParams} from 'react-router-dom'
 import NavBarNav from '../NavBarNav'
 import Spinner from '../Spinner'
+import { getFirestore } from "../../firebase";
+import { doc, getDoc, collection, query, where } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
     const { itemId } = useParams()
-    const [product, setProduct] = useState()
+    const [product, setProduct] = useState([])
 
     const getProduct = (data) => new Promise((resolve, reject) => {
         setTimeout(() =>{
@@ -21,10 +22,16 @@ const ItemDetailContainer = () => {
     });
     
     useEffect(()=>{
-        getProduct(DataBase)
-        .then((res) => setProduct(res.product.find(product => product.id === itemId)))
-		.catch((err) => console.log(err)
-        );
+        const db = getFirestore();
+
+        const q = query( collection(db, "items"), where("id", "==" , itemId));
+
+        const theItem = doc(db, 'items', itemId);
+        getDoc(theItem).then((snapshot) => {
+        if (snapshot.exists()) {
+            setProduct(snapshot.data());
+        }
+        });
 	}, [itemId]);
 
     return(

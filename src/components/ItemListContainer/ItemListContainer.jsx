@@ -1,13 +1,13 @@
 import React from 'react'
 import {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
-import DataBase from '../../DBProducts.json'
 import ItemList from '../ItemList'
+import { getFirestore } from "../../firebase";
+import { collection, query, where, getDocs } from "firebase/firestore";
 
 const ItemListContainer = () => {
     const{ categoryId } = useParams()
     const [products, setProducts] = useState([]);
-    
 
     const getProduct = (data) => new Promise((resolve, reject) => {
         setTimeout(() =>{
@@ -20,9 +20,16 @@ const ItemListContainer = () => {
     });
 
     useEffect(()=>{
-        getProduct(DataBase)
-        .then((res) => setProducts(res.filter(product => product.category === categoryId)))
-		.catch((err) => console.log(err));
+        const db = getFirestore();
+        const q = query( collection(db, "items"), where("category", "==" , categoryId));
+        getDocs(q).then((snapshot) => {
+            setProducts(
+            snapshot.docs.map((doc) => {
+                const newDoc = { ...doc.data(), id: doc.id };
+                return newDoc;
+            })
+            );
+        });
 	}, [categoryId]);
     
     return(
