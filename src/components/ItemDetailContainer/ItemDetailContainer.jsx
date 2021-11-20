@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
     useEffect(()=>{
         const db = getFirestore();
 
-        const q = query( collection(db, "items"), where("id", "==" , itemId));
+        // const q = query( collection(db, "items"), where("id", "==" , itemId));
 
         const theItem = doc(db, 'items', itemId);
         getDoc(theItem).then((snapshot) => {

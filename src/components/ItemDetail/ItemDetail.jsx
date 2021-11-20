@@ -2,15 +2,31 @@ import {useState, useContext} from 'react'
 import ItemCount from '../ItemCount'
 import { Link } from 'react-router-dom'
 import { CartContext} from '../CartContext/CartContext.jsx'
+import Swal from 'sweetalert2'
 
 const ItemDetail = ({item}) => {
     const [flag, setFlag] = useState (true)
     const [countCart, setCountCart] = useState (0)
     const {cart, setCart} = useContext(CartContext)
 
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'bottom-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    })
+
     const onAddClick = (count) =>{
         setFlag(false)
-        alert('Se agregaron '+ count + ' items al carrito' )
+        Toast.fire({
+            icon: 'success',
+            title: count + ' items were added to cart'
+        })
         setCart(item)
     };
 
