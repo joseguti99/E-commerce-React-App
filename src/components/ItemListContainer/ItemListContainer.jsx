@@ -9,16 +9,6 @@ const ItemListContainer = () => {
     const{ categoryId } = useParams()
     const [products, setProducts] = useState([]);
 
-    const getProduct = (data) => new Promise((resolve, reject) => {
-        setTimeout(() =>{
-            if(data){
-                resolve(data);
-            } else {
-                reject("La ruta no se pudo encontrar");
-            }
-        }, 2000)
-    });
-
     useEffect(()=>{
         const db = getFirestore();
         const q = query( collection(db, "items"), where("category", "==" , categoryId));

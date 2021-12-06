@@ -6,7 +6,6 @@ import Swal from 'sweetalert2'
 
 const ItemDetail = ({item}) => {
     const [flag, setFlag] = useState (true)
-    const [countCart, setCountCart] = useState (0)
     const {cart, setCart} = useContext(CartContext)
 
     const Toast = Swal.mixin({

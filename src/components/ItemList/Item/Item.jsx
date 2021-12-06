@@ -5,11 +5,10 @@ const Item = ({ item }) => {
     return (
         <>
         <div className="col-3 mb-5">
-                <div className="card h-100">
+                <div className="card h-100 shadow">
+                <Link key={item.id} exact to={`/item/${item.id}`} className="text-decoration-none text-dark">
                     <div>
-                        <Link key={item.id} exact to={`/item/${item.id}`}>
                             <img className="card-img-top" src={item.img} alt="..." />
-                        </Link>
                     </div>
                     <div className="card-body p-4">
                         <div className="text-center">
@@ -18,11 +17,11 @@ const Item = ({ item }) => {
                         </div>
                     </div>
                     <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="/">Add To Cart</a></div>
                             <div>
                                 <p className="mt-2 text-center">Units available: {item.stock}</p>
                             </div> 
                     </div>
+                </Link>
                 </div>
             </div>
         </>
