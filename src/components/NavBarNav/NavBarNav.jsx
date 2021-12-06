@@ -3,6 +3,7 @@ import { Link} from "react-router-dom";
 import style from './NavBarNav.module.css'
 import CartWidget from '../CartWidget/index'
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, } from 'reactstrap';
+import { FcTwoSmartphones } from "react-icons/fc";
 
 const NavBarNav = () => {
 const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,7 @@ return (
         <Navbar light expand="md" className={style.NavBarNav}>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
+        <h1 className="text-justify display-6" > <FcTwoSmartphones className="display-5"/> CELL-STORE</h1><br/>
             <Nav className="ms-auto" navbar>
             <NavItem className="mx-4 my-3 text-muted" >
                     <Link to="/" className="text-dark text-decoration-none">Home</Link>

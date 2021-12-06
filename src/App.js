@@ -5,6 +5,7 @@ import CartProducts from './components/CartProducts'
 import ItemDetailContainer from './components/ItemDetailContainer'
 import Products from './components/pages/Productos'
 import Payment from './components/Payment'
+import Error from './components/Error'
 import { CartProvider } from './components/CartContext/CartContext.jsx';
 
 
@@ -21,7 +22,7 @@ function App() {
                 <Route exact={true} path="/category/:categoryId" component= {Products}/>
                 <Route exact={true} path="/item/:itemId" component={ItemDetailContainer}/>
                 <Route exact={true} path="/Payment" component={Payment} />
-                <Route exact={true} path="*"><h1>Se ha producido un error, la pagina no fue encontrada!</h1></Route>
+                <Route exact={true} path="*" component={Error}/>
               </Switch>
             </div>
         </div>
