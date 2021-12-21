@@ -6,7 +6,6 @@ Project react.js in the CoderHouse course to finish my course as Front end, usin
 👇🏻Gift of my project👇🏻
 ![App Running](https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/gift/Proyect-React-Commit.gif)
 
-
 📂You can view my repository by downloading it!📂
 
 🔹git init

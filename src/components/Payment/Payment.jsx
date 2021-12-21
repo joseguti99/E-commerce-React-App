@@ -6,6 +6,8 @@ import {CartContext} from '../CartContext/CartContext';
 import { collection, addDoc} from "firebase/firestore";
 import {Link} from 'react-router-dom';
 import Swal from 'sweetalert2'
+import { Card, CardGroup, CardBody} from 'reactstrap';
+import { FcDataProtection } from "react-icons/fc";
 
 const Payment = () => {
     const { cart, setCart} = useContext(CartContext)
@@ -28,7 +30,7 @@ const Payment = () => {
             name: "email"
         },
         {
-            label:"address and number",
+            label:"Address and number",
             name: "address"
         },
         {
@@ -77,14 +79,11 @@ const Payment = () => {
     }
     return (
         <>
-        <div className="mx-5 col-4 text-center">
-            <h2>BUYER DATA</h2>
-            <div>
-                <img className="col-1" src="https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/svg/factura.png?raw=true" alt="" />
-            </div>
-        {inputs.map((input) => (
-        <div key={input.name} className="text-center my-3 col-9 mx-5">
-            <label className="m-1 h5" >{input.label}</label>
+        <div className="row m-3 bg-white shadow">
+            <h2 className="display-4 col-12 text-center">BUYER DATA</h2>
+            {inputs.map((input) => (
+        <div key={input.name} className="my-3 col-5 mx-5">
+            <label className="m-1 h5" >{input.label}</label>    
             <input
                 value={formFields[input.name]}
                 name={input.name}
@@ -94,8 +93,9 @@ const Payment = () => {
             />
         </div>
         ))}
-        <Link to="/" className="text-decoration-none text-dark col-10">
-    <button className="btn btn-danger text-center col-3 p-2" disabled={!formFields.name && 
+        
+        <Link to="/" className="text-decoration-none text-dark text-center">
+    <button className="btn btn-danger rounded-pill text-center col-3 p-3 m-5" disabled={!formFields.name && 
                         formFields.surname && 
                         formFields.age && 
                         formFields.email && 
@@ -106,6 +106,16 @@ const Payment = () => {
         </button>
         </Link>
     </div>
+    <CardGroup>
+        <Card className="mx-4 shadow m-1 bg-warning">
+            <Link to="/err" className="text-decoration-none text-center">
+                <CardBody>
+                    <FcDataProtection className="display-1"/>
+                    <h3 className="text-dark">Maximum data security</h3>
+                </CardBody>
+            </Link>
+        </Card>
+    </CardGroup>
     </>
     )
 }

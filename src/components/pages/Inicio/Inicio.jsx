@@ -2,6 +2,8 @@ import NavBarNav from '../../NavBarNav';
 import { Card, CardTitle, CardText, CardImg, CardGroup, CardBody} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { SiWhatsapp, SiGithub } from "react-icons/si";
+import { BsSmartwatch, BsHeadphones } from "react-icons/bs"
+import { FiSmartphone } from "react-icons/fi";
 
 const Inicio =  () => {
     return ( 
@@ -30,10 +32,10 @@ const Inicio =  () => {
             </Card>
         </div>
         <div>
-            <h3 className="text-center h2">OFFERS</h3>
+            <h3 className="text-center h2 my-4">OFFERS</h3>
             <CardGroup>
                 <Card className="mx-4 shadow">
-                    <Link to="item/APPLE-SERIE-3" className="text-decoration-none">
+                    <Link to="item/APPLE-SERIE-3" className="text-decoration-nonete">
                         <CardImg
                             alt="Card image cap"
                             src="https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/smartwatch/apple-watch-s3.png?raw=true"
@@ -119,16 +121,44 @@ const Inicio =  () => {
                 </Card>
             </CardGroup>
         </div>
-
+        <div>
+        <h3 className="text-center h2 my-4">CATEGORIES</h3>
+            <div>
+                <CardGroup className="row my-5 mx-5">
+                    <Card className="mx-4 shadow">
+                        <Link to="/category/smartwatch" className="text-decoration-none text-center">
+                            <CardBody>
+                                <BsSmartwatch className="display-1"/>
+                                <h3>SmartWatch</h3>
+                            </CardBody>
+                        </Link>
+                    </Card>
+                    <Card className="mx-4 shadow">
+                        <Link to="/category/accesories" className="text-decoration-none text-center">
+                            <CardBody>
+                                <BsHeadphones className="display-1"/>
+                                <h3>Accessories</h3>
+                            </CardBody>
+                        </Link>
+                    </Card>
+                    <Card className="mx-4 shadow">
+                        <Link to="/category/smartphone" className="text-decoration-none text-center">
+                            <CardBody>
+                                <FiSmartphone className="display-1"/>
+                                <h3>SmartPhones</h3>
+                            </CardBody>
+                        </Link>
+                    </Card>
+                </CardGroup>
+            
+            </div>
+            </div>
         <section className="page-section my-5">
         <div className="container bg-light shadow">
             <div className="text-center">
                 <img className="col-2 rounded-pill my-3" src="https://github.com/joseguti99/DB-IMG-PUBLIC/blob/main/gift/perfil.png?raw=true" alt="" />
                 <h2 className="section-heading text-uppercase">Thanks For Visiting Me!</h2>
                 <h3 className="section-subheading text-muted">welcome you to my store, I am the creator of Cell-Store</h3>
-            </div>
-            <div className="row">
-                <img src="" alt="" />
             </div>
             <div className="row">
                 <div className="col-lg-8 mx-auto text-center">
