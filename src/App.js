@@ -12,7 +12,7 @@ import { CartProvider } from './components/CartContext/CartContext.jsx';
 function App() {
   return (
     <>
-      <BrowserRouter> 
+      <BrowserRouter basename='/'> 
         <CartProvider>
         <div className="d-flex">
             <div className="content w-100">
