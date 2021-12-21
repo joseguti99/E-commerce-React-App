@@ -12,12 +12,12 @@ import { CartProvider } from './components/CartContext/CartContext.jsx';
 function App() {
   return (
     <>
-      <BrowserRouter basename='/'> 
+      <BrowserRouter basename='/home'> 
         <CartProvider>
         <div className="d-flex">
             <div className="content w-100">
               <Switch>  
-                <Route exact={true} path ="/" component={Inicio}/>
+                <Route exact={true} path ="/home" component={Inicio}/>
                 <Route exact={true} path ="/Cart" component = {CartProducts} />
                 <Route exact={true} path="/category/:categoryId" component= {Products}/>
                 <Route exact={true} path="/item/:itemId" component={ItemDetailContainer}/>
