@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/E-commerce-React-App/static/css/main.1128bf31.chunk.css",
-    "main.js": "/E-commerce-React-App/static/js/main.d36de043.chunk.js",
-    "main.js.map": "/E-commerce-React-App/static/js/main.d36de043.chunk.js.map",
-    "runtime-main.js": "/E-commerce-React-App/static/js/runtime-main.5f8033d8.js",
-    "runtime-main.js.map": "/E-commerce-React-App/static/js/runtime-main.5f8033d8.js.map",
-    "static/css/2.acf9cc11.chunk.css": "/E-commerce-React-App/static/css/2.acf9cc11.chunk.css",
-    "static/js/2.a5f8ed68.chunk.js": "/E-commerce-React-App/static/js/2.a5f8ed68.chunk.js",
-    "static/js/2.a5f8ed68.chunk.js.map": "/E-commerce-React-App/static/js/2.a5f8ed68.chunk.js.map",
-    "static/js/3.481d06d8.chunk.js": "/E-commerce-React-App/static/js/3.481d06d8.chunk.js",
-    "static/js/3.481d06d8.chunk.js.map": "/E-commerce-React-App/static/js/3.481d06d8.chunk.js.map",
-    "index.html": "/E-commerce-React-App/index.html",
-    "static/css/2.acf9cc11.chunk.css.map": "/E-commerce-React-App/static/css/2.acf9cc11.chunk.css.map",
-    "static/css/main.1128bf31.chunk.css.map": "/E-commerce-React-App/static/css/main.1128bf31.chunk.css.map",
-    "static/js/2.a5f8ed68.chunk.js.LICENSE.txt": "/E-commerce-React-App/static/js/2.a5f8ed68.chunk.js.LICENSE.txt"
+    "main.css": "/solucionesweb.online/static/css/main.81a6b9e4.chunk.css",
+    "main.js": "/solucionesweb.online/static/js/main.6f335647.chunk.js",
+    "main.js.map": "/solucionesweb.online/static/js/main.6f335647.chunk.js.map",
+    "runtime-main.js": "/solucionesweb.online/static/js/runtime-main.5adb1eb7.js",
+    "runtime-main.js.map": "/solucionesweb.online/static/js/runtime-main.5adb1eb7.js.map",
+    "static/css/2.acf9cc11.chunk.css": "/solucionesweb.online/static/css/2.acf9cc11.chunk.css",
+    "static/js/2.f2f8867f.chunk.js": "/solucionesweb.online/static/js/2.f2f8867f.chunk.js",
+    "static/js/2.f2f8867f.chunk.js.map": "/solucionesweb.online/static/js/2.f2f8867f.chunk.js.map",
+    "static/js/3.481d06d8.chunk.js": "/solucionesweb.online/static/js/3.481d06d8.chunk.js",
+    "static/js/3.481d06d8.chunk.js.map": "/solucionesweb.online/static/js/3.481d06d8.chunk.js.map",
+    "index.html": "/solucionesweb.online/index.html",
+    "static/css/2.acf9cc11.chunk.css.map": "/solucionesweb.online/static/css/2.acf9cc11.chunk.css.map",
+    "static/css/main.81a6b9e4.chunk.css.map": "/solucionesweb.online/static/css/main.81a6b9e4.chunk.css.map",
+    "static/js/2.f2f8867f.chunk.js.LICENSE.txt": "/solucionesweb.online/static/js/2.f2f8867f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5f8033d8.js",
+    "static/js/runtime-main.5adb1eb7.js",
     "static/css/2.acf9cc11.chunk.css",
-    "static/js/2.a5f8ed68.chunk.js",
-    "static/css/main.1128bf31.chunk.css",
-    "static/js/main.d36de043.chunk.js"
+    "static/js/2.f2f8867f.chunk.js",
+    "static/css/main.81a6b9e4.chunk.css",
+    "static/js/main.6f335647.chunk.js"
   ]
 }
